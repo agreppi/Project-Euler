@@ -3,7 +3,7 @@ from isPrime import is_prime
 def main():
     
     suma = 0
-    for b in range(2,10):
+    for b in range(2,2000000):
         if is_prime(b):
             suma += b
 
