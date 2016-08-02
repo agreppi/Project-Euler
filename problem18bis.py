@@ -3,7 +3,7 @@ import pdb
 
 def main():
     start = time.time()
-    f = open('p018_triangle.txt', 'r')
+    f = open('p018_triangle menor.txt', 'r')
     raw = f.readlines()
     triangle = []
     for linea in raw:
@@ -11,10 +11,10 @@ def main():
     f.close()
     fila = 0
     columna = 0
-
+    pdb.set_trace()
     suma = triangle[fila][columna]
     triangulo_de_sumas = [[suma]]
-    print([suma])
+    print(triangulo_de_sumas)
     # for fila in range(1,len(triangle)):
     for fila in range(1,len(triangle)):
         lista_parcial = []
